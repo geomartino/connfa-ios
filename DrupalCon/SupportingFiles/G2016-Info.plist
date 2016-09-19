@@ -43,7 +43,7 @@
 		<key>DryRun</key>
 		<false/>
 		<key>GoogleAnalyticsID</key>
-		<string></string>
+		<string>UA-63170826-2</string>
 	</dict>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
@@ -63,6 +63,8 @@
 		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Cette application requiert un accès à votre calendrier</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<true/>
 </dict>

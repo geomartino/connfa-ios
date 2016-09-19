@@ -459,7 +459,7 @@
 		5DC8C408198656DA00BF5816 = {
 			isa = PBXGroup;
 			children = (
-				A6C5F0F21BF4E9C50093AD65 /* DrupalCon */,
+				A6C5F0F21BF4E9C50093AD65 /* G2016 */,
 				5DC8C413198656DA00BF5816 /* Frameworks */,
 				5DC8C412198656DA00BF5816 /* Products */,
 			);
@@ -531,7 +531,7 @@
 			path = Sidebar;
 			sourceTree = "<group>";
 		};
-		A6C5F0F21BF4E9C50093AD65 /* DrupalCon */ = {
+		A6C5F0F21BF4E9C50093AD65 /* G2016 */ = {
 			isa = PBXGroup;
 			children = (
 				A6C5F0F31BF4E9C50093AD65 /* Classes */,
@@ -539,6 +539,7 @@
 				A6C5F21F1BF4E9C60093AD65 /* SupportingFiles */,
 				A6C5F2241BF4E9C60093AD65 /* Vendor */,
 			);
+			name = G2016;
 			path = DrupalCon;
 			sourceTree = "<group>";
 		};
