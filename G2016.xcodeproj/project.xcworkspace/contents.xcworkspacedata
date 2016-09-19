@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:DrupalCon.xcodeproj">
+      location = "self:/Users/martino/Projects/xcode/connfa-ios/G2016.xcodeproj">
    </FileRef>
 </Workspace>

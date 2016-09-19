@@ -74,56 +74,57 @@ static NSBundle* themeBundle;
 
   menuItems = @[
     @{
-      kMenuItemTitle : @"Sessions",
+      kMenuItemTitle : @"Conférences",
       kMenuItemIcon : @"menu_icon_program",
       kMenuItemSelectedIcon : @"menu_icon_program_sel",
       kMenuItemControllerId : @"DCProgramViewController",
       kMenuType : @(DCMENU_PROGRAM_ITEM)
     },
-    @{
+    /*@{
       kMenuItemTitle : @"BoFs",
       kMenuItemIcon : @"menu_icon_bofs",
       kMenuItemSelectedIcon : @"menu_icon_bofs_sel",
       kMenuItemControllerId : @"DCProgramViewController",
       kMenuType : @(DCMENU_BOFS_ITEM)
     },
+     */
     @{
-      kMenuItemTitle : @"Social Events",
+      kMenuItemTitle : @"Événements Sociaux",
       kMenuItemIcon : @"menu_icon_social",
       kMenuItemSelectedIcon : @"menu_icon_social_sel",
       kMenuItemControllerId : @"DCProgramViewController",
       kMenuType : @(DCMENU_SOCIAL_EVENTS_ITEM)
     },
     @{
-      kMenuItemTitle : @"Speakers",
+      kMenuItemTitle : @"Présentateurs",
       kMenuItemIcon : @"menu_icon_speakers",
       kMenuItemSelectedIcon : @"menu_icon_speakers_sel",
       kMenuItemControllerId : @"SpeakersViewController",
       kMenuType : @(DCMENU_SPEAKERS_ITEM)
     },
     @{
-      kMenuItemTitle : @"My Schedule",
+      kMenuItemTitle : @"Mon Horaire",
       kMenuItemIcon : @"menu_icon_my_schedule",
       kMenuItemSelectedIcon : @"menu_icon_my_schedule_sel",
       kMenuItemControllerId : @"DCProgramViewController",
       kMenuType : @(DCMENU_MYSCHEDULE_ITEM)
     },
     @{
-      kMenuItemTitle : @"Location",
+      kMenuItemTitle : @"Localisation",
       kMenuItemIcon : @"menu_icon_location",
       kMenuItemSelectedIcon : @"menu_icon_location_sel",
       kMenuItemControllerId : @"LocationViewController",
       kMenuType : @(DCMENU_LOCATION_ITEM)
     },
     @{
-      kMenuItemTitle : @"Info",
+      kMenuItemTitle : @"À Propos",
       kMenuItemIcon : @"menu_icon_about",
       kMenuItemSelectedIcon : @"menu_icon_about_sel",
       kMenuItemControllerId : @"InfoViewController",
       kMenuType : @(DCMENU_INFO_ITEM)
     },
     @{
-      kMenuItemTitle : @"Time and event place"
+      kMenuItemTitle : @"Heure et Endroit"
     }
   ];
 

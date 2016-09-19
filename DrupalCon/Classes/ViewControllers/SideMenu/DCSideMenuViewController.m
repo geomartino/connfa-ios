@@ -175,7 +175,7 @@
   switch (menuSection) {
     case DCMENU_MYSCHEDULE_ITEM:
     case DCMENU_SOCIAL_EVENTS_ITEM:
-    case DCMENU_BOFS_ITEM:
+    //case DCMENU_BOFS_ITEM:
     case DCMENU_PROGRAM_ITEM:
       defaultStoryboardName = @"Events";
       break;
