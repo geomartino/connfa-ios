@@ -134,7 +134,7 @@
       return self.tracksToShow.count;
 
     default:
-      NSAssert(false, @"unhanled Filter type");
+      NSAssert(false, @"Filtre non supporté");
   }
 
   return 0;
@@ -155,7 +155,9 @@
 
   NSAssert(headerTitle != nil, @"no header title");
 
-  return headerTitle;
+  //return headerTitle;
+  return @"";
+    
 }
 
 - (FilterCellType)getCellType:(NSInteger)section {

@@ -37,7 +37,7 @@
 
   if (date.length && place.length)
     self.dateAndPlaceLabel.text =
-        [NSString stringWithFormat:@"%@ in %@", date, place];
+        [NSString stringWithFormat:@"%@ dans %@", date, place];
   else
     self.dateAndPlaceLabel.text =
         [NSString stringWithFormat:@"%@%@", date, place];

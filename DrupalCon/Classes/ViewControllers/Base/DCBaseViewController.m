@@ -35,6 +35,9 @@
              forBarMetrics:UIBarMetricsDefault];
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     self.navigationController.navigationBar.translucent = YES;
+    //change BACK text in back button
+    [self.navigationController.navigationBar.backItem setTitle: @"Retour"];
+      
   }
 
   // hide annoying 1 px stripe between NavigationBar and controller View

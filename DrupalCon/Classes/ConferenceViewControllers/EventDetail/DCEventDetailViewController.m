@@ -83,6 +83,12 @@ static NSString* cellIdDescription = @"DetailCellIdDescription";
   self.topBackgroundShadowView.backgroundColor =
       [DCAppConfiguration eventDetailHeaderColour];
   [self initSpeakers];
+
+    
+}
+
+- (void)dismissMyView {
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -126,15 +132,13 @@ static NSString* cellIdDescription = @"DetailCellIdDescription";
   self.navigatorBarStyle = EBaseViewControllerNatigatorBarStyleTransparrent;
   [super arrangeNavigationBar];
 
-  self.navigationController.navigationBar.tintColor =
-      [DCAppConfiguration navigationBarColor];
+  self.navigationController.navigationBar.tintColor = [DCAppConfiguration navigationBarColor];
   [self.navigationController.navigationBar
       setBackgroundImage:[UIImage imageWithColor:[UIColor clearColor]]
            forBarMetrics:UIBarMetricsDefault];
   self.navigationController.navigationBar.shadowImage = [UIImage new];
   self.navigationController.navigationBar.translucent = YES;
-  self.navigationController.navigationBar.backgroundColor =
-      [UIColor clearColor];
+  self.navigationController.navigationBar.backgroundColor = [UIColor clearColor];
   UIImage* startImage =
       self.event.favorite.boolValue
           ? [[UIImage imageNamedFromBundle:@"star+"]
@@ -161,6 +165,7 @@ static NSString* cellIdDescription = @"DetailCellIdDescription";
   self.currentBarColor = eventNavColor;
 
   self.navigationItem.rightBarButtonItems = @[ sharedButton, favoriteButton ];
+  
 }
 
 - (BOOL)hideEmptyDetailIcon {

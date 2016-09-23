@@ -84,7 +84,7 @@ static NSString* kDCSpeakerEventCellFormat = @"dd LLLL";
 + (float)currentHour {
   NSDate* date = [NSDate date];
   NSCalendar* calendar = [NSCalendar currentGregorianCalendar];
-  [calendar setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_GB"]];
+  [calendar setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"fr_CA"]];
   NSDateComponents* components =
       [calendar components:(NSHourCalendarUnit | NSMinuteCalendarUnit)
                   fromDate:date];
