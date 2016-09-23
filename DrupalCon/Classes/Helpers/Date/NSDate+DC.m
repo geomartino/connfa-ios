@@ -56,7 +56,7 @@ static NSString* kDCSpeakerEventCellFormat = @"dd LLLL";
 
   NSDateFormatter* dateFormatter = [NSDateFormatter new];
   [dateFormatter
-      setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+      setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"fr_CA"]];
   [dateFormatter setDateFormat:dateFormat];
 
   return [dateFormatter dateFromString:formattedDate];
@@ -65,7 +65,7 @@ static NSString* kDCSpeakerEventCellFormat = @"dd LLLL";
 - (NSString*)dateToStringWithFormat:(NSString*)dateFormat {
   NSDateFormatter* dateFormatter = [NSDateFormatter new];
   dateFormatter.timeZone = T_ZERO;
-  [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US_POSIX"]];
+  [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"fr_CA_POSIX"]];
   [dateFormatter setDateStyle:NSDateFormatterShortStyle];
   [dateFormatter setDateFormat:dateFormat];
   return [dateFormatter stringFromDate:self];

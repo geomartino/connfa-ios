@@ -159,7 +159,7 @@ static NSInteger eventCellImageHeight = 16;
                                  ? [NSString stringWithFormat:@"%@", startTime]
                                  : nil;
   self.endTimeLabel.text = self.isFirstCellInSection
-                               ? [NSString stringWithFormat:@"to %@", endTime]
+                               ? [NSString stringWithFormat:@"à %@", endTime]
                                : nil;
 
   self.separatorLeadingConstraint.constant =
