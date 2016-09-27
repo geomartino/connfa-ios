@@ -26,7 +26,8 @@ static NSBundle* themeBundle;
 
 + (UIColor*)navigationBarColor {
   NSString* colorId = [themeBundle infoDictionary][kNavigationBarColour];
-  return [UIColor colorFromHexString:colorId];
+  //return [UIColor colorFromHexString:colorId];
+  return [UIColor colorFromHexString:@"#49479D"];
 }
 
 + (UIColor*)favoriteEventColor {
