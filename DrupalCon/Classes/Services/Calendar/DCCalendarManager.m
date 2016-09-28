@@ -140,6 +140,8 @@ NSString* kCalendarIdKey = @"CalendarIdKey";
   calendar.title = [DCCalendarManager calendarTitle];
   calendar.source = defaultSource;
 
+
+/*DISABLE THE SAVING TO CALENDATR STUFF
   NSError* error = nil;
   [self.eventStore saveCalendar:calendar commit:YES error:&error];
 
@@ -158,7 +160,8 @@ NSString* kCalendarIdKey = @"CalendarIdKey";
     [userDefaults setObject:calendar.calendarIdentifier forKey:kCalendarIdKey];
     [userDefaults synchronize];
   }
-
+*/
+    
   return calendar;
 }
 
