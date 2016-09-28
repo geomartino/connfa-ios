@@ -14,7 +14,11 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-
+    
+    
+  //hack sleep for 2 seconds before launching app
+  [NSThread sleepForTimeInterval:2.0f];
+    
   [UIApplication sharedApplication].keyWindow.backgroundColor =
       [UIColor whiteColor];
 
