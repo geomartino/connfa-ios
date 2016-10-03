@@ -22,11 +22,12 @@ NSString* kCalendarIdKey = @"CalendarIdKey";
 
 - (instancetype)init {
   self = [super init];
-  if (self) {
-    self.eventStore = [EKEventStore new];
-    self.blockOperation = [[NSBlockOperation alloc] init];
-    [self checkEventStoreAccessForCalendar];
-  }
+  
+  //if (self) {
+  //  self.eventStore = [EKEventStore new];
+  //  self.blockOperation = [[NSBlockOperation alloc] init];
+  //  [self checkEventStoreAccessForCalendar];
+  //}
   return self;
 }
 
