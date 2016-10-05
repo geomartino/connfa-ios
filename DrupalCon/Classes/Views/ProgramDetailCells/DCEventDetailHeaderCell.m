@@ -28,9 +28,10 @@
                               toApplicationFormat:timeFormat];
   NSString* endTime =
       [DCDateHelper convertDate:event.endDate toApplicationFormat:timeFormat];
-  date = [NSString stringWithFormat:@"%@, %@ - %@", date,
-                                    startTime, endTime];
-
+  
+  //date = [NSString stringWithFormat:@"%@, %@ - %@", date, startTime, endTime];
+  date = [NSString stringWithFormat:@"%@ - %@", startTime, endTime];
+    
   self.eventDetailContainerView.backgroundColor =
       [DCAppConfiguration eventDetailHeaderColour];
   NSString* place = event.place ? event.place : @"";
@@ -49,11 +50,12 @@
       (track.trackId.integerValue == 0 && level.levelId.integerValue == 0);
 
   if (!shouldHideTrackAndLevelView) {
-    self.trackLabel.text = [(DCTrack*)[event.tracks anyObject] name];
-    self.experienceLabel.text =
-        event.level.name ? [NSString stringWithFormat:@"Experience level: %@",
-                                                      event.level.name]
-                         : nil;
+    //self.trackLabel.text = [(DCTrack*)[event.tracks anyObject] name];
+    self.trackLabel.text = @"";
+    //self.experienceLabel.text =
+    //    event.level.name ? [NSString stringWithFormat:@"Experience level: %@",
+    //                                                  event.level.name]
+    //                     : nil;
 
     UIImage* icon = nil;
     switch (event.level.levelId.integerValue) {
@@ -69,10 +71,10 @@
       default:
         break;
     }
-    self.experienceIcon.image = icon;
+    //self.experienceIcon.image = icon;
   } else {
-    self.trackAndLevelViewHeight.priority = 900;
-    self.TrackAndLevelView.hidden = YES;
+    //self.trackAndLevelViewHeight.priority = 900;
+    //self.TrackAndLevelView.hidden = YES;
   }
 }
 
