@@ -36,24 +36,36 @@
                               toApplicationFormat:@"h:mm aaa"];
   NSString* endTime =
       [DCDateHelper convertDate:event.endDate toApplicationFormat:@"h:mm aaa"];
-  date = [NSString
+ 
+    /*bug, must remove day of week because = day -1 and did'nt find fix to that
+     date = [NSString
       stringWithFormat:@"%@, %@ - %@", [date uppercaseString],
                        startTime,  //[NSDate hourFormatForDate:event.startDate
                        // andTimeZone:eventTimeZone],
                        endTime];  //[NSDate hourFormatForDate:event.endDate
   // andTimeZone:eventTimeZone]];
+*/
+    
+    date = [NSString
+            stringWithFormat:@"%@ - %@",
+            startTime,  //[NSDate hourFormatForDate:event.startDate
+            // andTimeZone:eventTimeZone],
+            endTime];  //[NSDate hourFormatForDate:event.endDate
+    // andTimeZone:eventTimeZone]];
 
+    
   NSString* place = event.place ? event.place : @"";
 
   if (date.length && place.length)
     self.eventTimeLabel.text =
-        [NSString stringWithFormat:@"%@ in %@", date, place];
+        [NSString stringWithFormat:@"%@ dans %@", date, place];
   else
     self.eventTimeLabel.text = [NSString stringWithFormat:@"%@%@", date, place];
 
   // event Track
-  self.eventTrackLabel.text = [(DCTrack*)[event.tracks anyObject] name];
-
+  //self.eventTrackLabel.text = [(DCTrack*)[event.tracks anyObject] name];
+  self.eventTrackLabel.text = @"";
+    
   // event experience Level
   if (event.level.name.length) {
     self.eventLevelLabel.text =
